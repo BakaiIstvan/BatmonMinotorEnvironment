@@ -1,0 +1,20 @@
+never{ /*JunctionMonitor*/
+T0_init:
+ do
+ :: (true) -> goto T0_init
+ :: (controller.turnYellow().lamp) -> goto T0_q1
+ od;
+T0_q1:
+ do
+ :: (true) -> goto T0_q1
+ :: (appear(Junction.TrafficLamp)) -> goto T0_q2
+ od;
+T0_q2:
+ do
+ :: (true) -> goto T0_q2
+ :: (lamp.updateStatus().controller) -> goto T0_q3
+ od;
+T0_q3:
+ do
+ od;
+}
