@@ -5,7 +5,8 @@ public class JunctionMonitor extends Monitor {
 		State_0,
 		State_1,
 		State_2,
-		State_3
+		State_3,
+		State_4
 	}
 	private State currentState;
 
@@ -18,7 +19,10 @@ public class JunctionMonitor extends Monitor {
 		this.setName("JunctionMonitor");
 
 		currentState = State.State_0;
-		if(currentState.equals(State.State_3)) {
+		if(currentState.equals(State.State_2)) {
+			return goodStateReached();
+		}
+		else if(currentState.equals(State.State_4)) {
 			return goodStateReached();
 		}
 		return 0;
@@ -43,7 +47,7 @@ public class JunctionMonitor extends Monitor {
 		java.util.List<String> signals = new java.util.ArrayList<>();
 		Collections.addAll(signals, signal_sequence.split(";\\s*"));
 
-		boolean[] letters = new boolean[3];
+		boolean[] letters = new boolean[4];
 		System.out.println(getMessagePrefix() + "Current state is: " + currentState);
 
 		java.util.List<String> signals_used = new java.util.ArrayList<>();
@@ -51,69 +55,121 @@ public class JunctionMonitor extends Monitor {
 			letters[0] = true;
 			signals_used.add("lamp.updatestatus().controller");
 		}
-		if(signals.contains("appear(junction.trafficlamp)")) {
-			letters[1] = true;
-			signals_used.add("appear(junction.trafficlamp)");
-		}
 		if(signals.contains("controller.turnyellow().lamp")) {
-			letters[2] = true;
+			letters[1] = true;
 			signals_used.add("controller.turnyellow().lamp");
+		}
+		if(signals.contains("controller.turnoff().lamp")) {
+			letters[2] = true;
+			signals_used.add("controller.turnoff().lamp");
+		}
+		if(signals.contains("match(junction, redlight)")) {
+			letters[3] = true;
+			signals_used.add("match(junction, redlight)");
 		}
 		System.out.println(getMessagePrefix() + "Signal is: " + String.join("; ", signals_used));
 
 		switch(currentState) {
 			case State_0:
-				if((!(letters[0])) && (!(letters[1])) && (!(letters[2])))
+				if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])))
 					currentState = State.State_0;
-				else if((letters[0]) && (!(letters[1])) && (!(letters[2])))
+				else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])))
 					currentState = State.State_0;
-				else if((!(letters[0])) && (letters[1]) && (!(letters[2])))
+				else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])))
 					currentState = State.State_0;
-				else if((!(letters[0])) && (!(letters[1])) && (letters[2]))
+				else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])))
+					currentState = State.State_0;
+				else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]))
 					currentState = State.State_1;
-				else if((letters[0]) && (letters[1]) && (!(letters[2])))
+				else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])))
 					currentState = State.State_0;
-				else if((letters[0]) && (!(letters[1])) && (letters[2]))
+				else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])))
+					currentState = State.State_0;
+				else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]))
 					currentState = State.State_1;
-				else if((!(letters[0])) && (letters[1]) && (letters[2]))
+				else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])))
+					currentState = State.State_0;
+				else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]))
 					currentState = State.State_1;
-				else if((letters[0]) && (letters[1]) && (letters[2]))
+				else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]))
+					currentState = State.State_1;
+				else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])))
+					currentState = State.State_0;
+				else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]))
+					currentState = State.State_1;
+				else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]))
+					currentState = State.State_1;
+				else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]))
+					currentState = State.State_1;
+				else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]))
 					currentState = State.State_1;
 				break;
 			case State_1:
-				if((!(letters[0])) && (!(letters[1])) && (!(letters[2])))
+				if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])))
 					currentState = State.State_1;
-				else if((letters[0]) && (!(letters[1])) && (!(letters[2])))
+				else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])))
 					currentState = State.State_1;
-				else if((!(letters[0])) && (letters[1]) && (!(letters[2])))
-					currentState = State.State_2;
-				else if((!(letters[0])) && (!(letters[1])) && (letters[2]))
+				else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])))
+					currentState = State.State_3;
+				else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])))
 					currentState = State.State_1;
-				else if((letters[0]) && (letters[1]) && (!(letters[2])))
-					currentState = State.State_2;
-				else if((letters[0]) && (!(letters[1])) && (letters[2]))
+				else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]))
 					currentState = State.State_1;
-				else if((!(letters[0])) && (letters[1]) && (letters[2]))
-					currentState = State.State_2;
-				else if((letters[0]) && (letters[1]) && (letters[2]))
-					currentState = State.State_2;
+				else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])))
+					currentState = State.State_3;
+				else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])))
+					currentState = State.State_1;
+				else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]))
+					currentState = State.State_1;
+				else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])))
+					currentState = State.State_3;
+				else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]))
+					currentState = State.State_3;
+				else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]))
+					currentState = State.State_1;
+				else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])))
+					currentState = State.State_3;
+				else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]))
+					currentState = State.State_3;
+				else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]))
+					currentState = State.State_1;
+				else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]))
+					currentState = State.State_3;
+				else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]))
+					currentState = State.State_3;
 				break;
-			case State_2:
-				if((!(letters[0])) && (!(letters[1])) && (!(letters[2])))
-					currentState = State.State_2;
-				else if((letters[0]) && (!(letters[1])) && (!(letters[2])))
+			case State_3:
+				if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])))
+					currentState = State.State_3;
+				else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])))
 					return goodStateReached();
-				else if((!(letters[0])) && (letters[1]) && (!(letters[2])))
-					currentState = State.State_2;
-				else if((!(letters[0])) && (!(letters[1])) && (letters[2]))
-					currentState = State.State_2;
-				else if((letters[0]) && (letters[1]) && (!(letters[2])))
+				else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])))
+					currentState = State.State_3;
+				else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])))
+					currentState = State.State_1;
+				else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]))
+					currentState = State.State_3;
+				else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])))
 					return goodStateReached();
-				else if((letters[0]) && (!(letters[1])) && (letters[2]))
+				else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])))
 					return goodStateReached();
-				else if((!(letters[0])) && (letters[1]) && (letters[2]))
-					currentState = State.State_2;
-				else if((letters[0]) && (letters[1]) && (letters[2]))
+				else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]))
+					return goodStateReached();
+				else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])))
+					currentState = State.State_3;
+				else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]))
+					currentState = State.State_3;
+				else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]))
+					currentState = State.State_1;
+				else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])))
+					return goodStateReached();
+				else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]))
+					return goodStateReached();
+				else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]))
+					return goodStateReached();
+				else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]))
+					currentState = State.State_3;
+				else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]))
 					return goodStateReached();
 				break;
 		}
