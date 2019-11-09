@@ -18,8 +18,6 @@ public class Main {
         controller.lamp.turnYellow();
         junctionMonitor.update("controller.turnYellow().lamp");
         
-        junction.getTrafficLamp().setAppear();
-        
         lamp.controller.updateStatus();
         junctionMonitor.update("lamp.updateStatus().controller");
     }
