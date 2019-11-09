@@ -8,7 +8,7 @@ public class Lamp {
     }
 
     public void setController(LampController controller) { this.controller = controller; }
-
+    
     public void turnYellow() {}
     public void turnOff() {}
 }
