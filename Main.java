@@ -8,26 +8,18 @@ public class Main {
     public static void main(String args[]) {
         JunctionMonitor junctionMonitor = new JunctionMonitor();
         redlight = new Redlight();
-        junction = new Junction(eventCreator);
         eventCreator = new EventCreator(junction, redlight, junctionMonitor);
+        junction = new Junction(eventCreator);
+        eventCreator.setJunction(junction);
         lamp = new Lamp(controller, junctionMonitor);
         controller = new LampController(lamp, junctionMonitor);
-
-        junction.getTrafficLamp().setAppear();
-
-        junction.getCar().setAppear();
-        junction.getCar().setSpeed(51);
-        junction.getCar().setColor("red");
-
-        junction.getBycicle().setAppear();
-        junction.getBycicle().setLocation("in_front_of_the_car");
-
-        junction.getDistance().setMeter(13);
-
-        junction.getRightOfWay().setRightofway("bycicle");
+        lamp.setController(controller);
 
         controller.lamp.turnYellow();
         junctionMonitor.update("controller.turnYellow().lamp");
+
+        junction.getTrafficLamp().setAppear();
+
         lamp.controller.updateStatus();
         junctionMonitor.update("lamp.updateStatus().controller");
     }
