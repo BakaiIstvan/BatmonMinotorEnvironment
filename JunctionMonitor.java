@@ -41,10 +41,10 @@ public class JunctionMonitor extends Monitor {
 	@Override
 	public int update(String signal_sequence) {
 		java.util.List<String> signals = new java.util.ArrayList<>();
-		Collections.addAll(signals, signal_sequence.split(";\\s*"));
+		Collections.addAll(signals, signal_sequence.toLowerCase().split("\\s*;\\s*"));
 
 		boolean[] letters = new boolean[3];
-		System.out.println(getMessagePrefix() + "Current state is: " + currentState);
+		System.out.println(getMessagePrefix() + "State before update: " + currentState);
 
 		java.util.List<String> signals_used = new java.util.ArrayList<>();
 		if(signals.contains("lamp.updatestatus().controller")) {
@@ -59,66 +59,96 @@ public class JunctionMonitor extends Monitor {
 			letters[2] = true;
 			signals_used.add("controller.turnyellow().lamp");
 		}
-		System.out.println(getMessagePrefix() + "Signal is: " + String.join("; ", signals_used));
+		System.out.println(getMessagePrefix() + "Signals sent: " + String.join("; ", signals));
+		System.out.println(getMessagePrefix() + "Signals used: " + String.join("; ", signals_used));
 
 		switch(currentState) {
 			case State_0:
-				if((!(letters[0])) && (!(letters[1])) && (!(letters[2])))
+				if((!(letters[0])) && (!(letters[1])) && (!(letters[2]))) {
 					currentState = State.State_0;
-				else if((letters[0]) && (!(letters[1])) && (!(letters[2])))
+				}
+				else if((letters[0]) && (!(letters[1])) && (!(letters[2]))) {
 					currentState = State.State_0;
-				else if((!(letters[0])) && (letters[1]) && (!(letters[2])))
+				}
+				else if((!(letters[0])) && (letters[1]) && (!(letters[2]))) {
 					currentState = State.State_0;
-				else if((!(letters[0])) && (!(letters[1])) && (letters[2]))
+				}
+				else if((!(letters[0])) && (!(letters[1])) && (letters[2])) {
 					currentState = State.State_1;
-				else if((letters[0]) && (letters[1]) && (!(letters[2])))
+				}
+				else if((letters[0]) && (letters[1]) && (!(letters[2]))) {
 					currentState = State.State_0;
-				else if((letters[0]) && (!(letters[1])) && (letters[2]))
+				}
+				else if((letters[0]) && (!(letters[1])) && (letters[2])) {
 					currentState = State.State_1;
-				else if((!(letters[0])) && (letters[1]) && (letters[2]))
+				}
+				else if((!(letters[0])) && (letters[1]) && (letters[2])) {
 					currentState = State.State_1;
-				else if((letters[0]) && (letters[1]) && (letters[2]))
+				}
+				else if((letters[0]) && (letters[1]) && (letters[2])) {
 					currentState = State.State_1;
+				}
 				break;
 			case State_1:
-				if((!(letters[0])) && (!(letters[1])) && (!(letters[2])))
+				if((!(letters[0])) && (!(letters[1])) && (!(letters[2]))) {
 					currentState = State.State_1;
-				else if((letters[0]) && (!(letters[1])) && (!(letters[2])))
+				}
+				else if((letters[0]) && (!(letters[1])) && (!(letters[2]))) {
 					currentState = State.State_1;
-				else if((!(letters[0])) && (letters[1]) && (!(letters[2])))
+				}
+				else if((!(letters[0])) && (letters[1]) && (!(letters[2]))) {
 					currentState = State.State_2;
-				else if((!(letters[0])) && (!(letters[1])) && (letters[2]))
+				}
+				else if((!(letters[0])) && (!(letters[1])) && (letters[2])) {
 					currentState = State.State_1;
-				else if((letters[0]) && (letters[1]) && (!(letters[2])))
+				}
+				else if((letters[0]) && (letters[1]) && (!(letters[2]))) {
 					currentState = State.State_2;
-				else if((letters[0]) && (!(letters[1])) && (letters[2]))
+				}
+				else if((letters[0]) && (!(letters[1])) && (letters[2])) {
 					currentState = State.State_1;
-				else if((!(letters[0])) && (letters[1]) && (letters[2]))
+				}
+				else if((!(letters[0])) && (letters[1]) && (letters[2])) {
 					currentState = State.State_2;
-				else if((letters[0]) && (letters[1]) && (letters[2]))
+				}
+				else if((letters[0]) && (letters[1]) && (letters[2])) {
 					currentState = State.State_2;
+				}
 				break;
 			case State_2:
-				if((!(letters[0])) && (!(letters[1])) && (!(letters[2])))
+				if((!(letters[0])) && (!(letters[1])) && (!(letters[2]))) {
 					currentState = State.State_2;
-				else if((letters[0]) && (!(letters[1])) && (!(letters[2])))
+				}
+				else if((letters[0]) && (!(letters[1])) && (!(letters[2]))) {
+					currentState = State.State_3;
 					return goodStateReached();
-				else if((!(letters[0])) && (letters[1]) && (!(letters[2])))
+				}
+				else if((!(letters[0])) && (letters[1]) && (!(letters[2]))) {
 					currentState = State.State_2;
-				else if((!(letters[0])) && (!(letters[1])) && (letters[2]))
+				}
+				else if((!(letters[0])) && (!(letters[1])) && (letters[2])) {
 					currentState = State.State_2;
-				else if((letters[0]) && (letters[1]) && (!(letters[2])))
+				}
+				else if((letters[0]) && (letters[1]) && (!(letters[2]))) {
+					currentState = State.State_3;
 					return goodStateReached();
-				else if((letters[0]) && (!(letters[1])) && (letters[2]))
+				}
+				else if((letters[0]) && (!(letters[1])) && (letters[2])) {
+					currentState = State.State_3;
 					return goodStateReached();
-				else if((!(letters[0])) && (letters[1]) && (letters[2]))
+				}
+				else if((!(letters[0])) && (letters[1]) && (letters[2])) {
 					currentState = State.State_2;
-				else if((letters[0]) && (letters[1]) && (letters[2]))
+				}
+				else if((letters[0]) && (letters[1]) && (letters[2])) {
+					currentState = State.State_3;
 					return goodStateReached();
+				}
 				break;
+			case State_3:
+					return goodStateReached();
 		}
-
-		System.out.println(getMessagePrefix() + "State after update: " + currentState);
+		System.out.println(getMessagePrefix() + "State after update: " + currentState + "\n");
 
 		return 0;
 	}
