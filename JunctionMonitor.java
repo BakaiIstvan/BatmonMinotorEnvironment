@@ -67,6 +67,7 @@ public class JunctionMonitor extends Monitor {
 			letters[3] = true;
 			signals_used.add("match(junction, redlight)");
 		}
+		System.out.println(getMessagePrefix() + "Signals sent: " + String.join("; ", signals));
 		System.out.println(getMessagePrefix() + "Signal is: " + String.join("; ", signals_used));
 
 		switch(currentState) {
@@ -233,7 +234,7 @@ public class JunctionMonitor extends Monitor {
 			case State_4:
 					return goodStateReached();
 		}
-		System.out.println(getMessagePrefix() + "State after update: " + currentState);
+		System.out.println(getMessagePrefix() + "State after update: " + currentState + "\n");
 
 		return 0;
 	}
