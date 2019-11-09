@@ -1,3 +1,4 @@
+
 public class Main {
     static Junction junction;
     static Redlight redlight;
@@ -19,6 +20,8 @@ public class Main {
         junctionMonitor.update("controller.turnYellow().lamp");
         
         lamp.controller.updateStatus();
-        junctionMonitor.update("lamp.updateStatus().controller");
+        if (junctionMonitor.update("lamp.updateStatus().controller") == 0) {
+        	System.out.println("Inconclusive");
+        }
     }
 }
