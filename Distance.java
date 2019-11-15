@@ -21,7 +21,7 @@ public class Distance {
 	
 	public void setMeter(int meter) { 
 		this.meter = meter;
-		eventCreator.changeTo("Distance.meter(" + meter +")");
+		eventCreator.changeTo("Distance.meter, " + meter);
 	}
 	
 	public Car getSender() { return sender; }

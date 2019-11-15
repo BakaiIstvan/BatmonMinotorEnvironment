@@ -13,6 +13,10 @@ public class EventCreator {
 		this.monitorInterface = monitorInterface;
 	}
 	
+	public void setJunction(Junction junction) {
+		this.junction = junction;
+	}
+	
 	public void appear(String name) {
 		monitorInterface.update("appear(Junction." + name + ")");
 		if (redlight.match(

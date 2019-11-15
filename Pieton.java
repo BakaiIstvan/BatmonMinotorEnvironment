@@ -39,24 +39,24 @@ public class Pieton {
 							
 	public void setSpeed(float speed) { 
 		this.speed = speed;
-		eventCreator.changeTo("Pieton.speed(" + speed +")");
+		eventCreator.changeTo("Pieton.speed, " + speed);
 	}
 	public int getMass() { return mass; }
 	
 	public void setMass(int mass) { 
 		this.mass = mass;
-		eventCreator.changeTo("Pieton.mass(" + mass +")");
+		eventCreator.changeTo("Pieton.mass, " + mass);
 	}
 	public String getColor() { return color; }
 							
 	public void setColor(String color) { 
 		this.color = color;
-		eventCreator.changeTo("Pieton.color(" + color +")");
+		eventCreator.changeTo("Pieton.color, " + color);
 	}
 	public String getLocation() { return location; }
 							
 	public void setLocation(String location) { 
 		this.location = location;
-		eventCreator.changeTo("Pieton.location(" + location +")");
+		eventCreator.changeTo("Pieton.location, " + location);
 	}
 }

@@ -21,7 +21,7 @@ public class RightOfWay {
 							
 	public void setRightofway(String rightofway) { 
 		this.rightofway = rightofway;
-		eventCreator.changeTo("RightOfWay.rightofway(" + rightofway +")");
+		eventCreator.changeTo("RightOfWay.rightofway, " + rightofway);
 	}
 	
 	public Car getSender() { return sender; }

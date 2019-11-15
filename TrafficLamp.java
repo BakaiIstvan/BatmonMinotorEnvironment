@@ -30,6 +30,6 @@ public class TrafficLamp {
 							
 	public void setStatus(String status) { 
 		this.status = status;
-		eventCreator.changeTo("TrafficLamp.status(" + status +")");
+		eventCreator.changeTo("TrafficLamp.status, " + status);
 	}
 }

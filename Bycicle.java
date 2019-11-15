@@ -36,18 +36,18 @@ public class Bycicle {
 							
 	public void setSpeed(float speed) { 
 		this.speed = speed;
-		eventCreator.changeTo("Bycicle.speed(" + speed +")");
+		eventCreator.changeTo("Bycicle.speed, " + speed);
 	}
 	public String getColor() { return color; }
 							
 	public void setColor(String color) { 
 		this.color = color;
-		eventCreator.changeTo("Bycicle.color(" + color +")");
+		eventCreator.changeTo("Bycicle.color, " + color);
 	}
 	public String getLocation() { return location; }
 							
 	public void setLocation(String location) { 
 		this.location = location;
-		eventCreator.changeTo("Bycicle.location(" + location +")");
+		eventCreator.changeTo("Bycicle.location, " + location);
 	}
 }

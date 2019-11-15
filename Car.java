@@ -33,12 +33,12 @@ public class Car {
 							
 	public void setSpeed(float speed) { 
 		this.speed = speed;
-		eventCreator.changeTo("Car.speed(" + speed +")");
+		eventCreator.changeTo("Car.speed, " + speed);
 	}
 	public String getColor() { return color; }
 							
 	public void setColor(String color) { 
 		this.color = color;
-		eventCreator.changeTo("Car.color(" + color +")");
+		eventCreator.changeTo("Car.color, " + color);
 	}
 }

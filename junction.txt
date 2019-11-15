@@ -22,11 +22,11 @@ T0_q3:
 T0_q4:
  do
  :: (!(controller.turnOff().lamp)) -> goto T0_q4
- :: (lamp.updateStatus(Yellow).controller) -> goto T0_q5
+ :: (lamp.updateStatus().controller) -> goto T0_q5
  od;
 T0_q5:
  do
- :: (changeTo(Junction.Car.speed, 50)) -> goto T0_q6
+ :: (changeTo(Junction.Car.speed, 50.0)) -> goto T0_q6
  od;
 T0_q6:
  do

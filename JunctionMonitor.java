@@ -71,13 +71,13 @@ public class JunctionMonitor extends Monitor {
 			letters[0] = true;
 			signals_used.add("changeto(junction.distance.meter, 100)");
 		}
-		if(signals.contains("lamp.updatestatus(yellow).controller")) {
+		if(signals.contains("lamp.updatestatus().controller")) {
 			letters[1] = true;
-			signals_used.add("lamp.updatestatus(yellow).controller");
+			signals_used.add("lamp.updatestatus().controller");
 		}
-		if(signals.contains("changeto(junction.car.speed, 50)")) {
+		if(signals.contains("changeto(junction.car.speed, 50.0)")) {
 			letters[2] = true;
-			signals_used.add("changeto(junction.car.speed, 50)");
+			signals_used.add("changeto(junction.car.speed, 50.0)");
 		}
 		if(signals.contains("appear(junction.trafficlamp)")) {
 			letters[3] = true;
