@@ -35,7 +35,7 @@ public class Main {
         junction.getCar().setSpeed(50);
         junction.getDistance().setMeter(100);
         if (junctionMonitor.update("_") == 0) {
-        	System.out.println("Inconclusive");
+        	System.out.println("JunctionMonitor: Inconclusive");
         }
     }
 }
