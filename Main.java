@@ -28,13 +28,14 @@ public class Main {
 
         junction.getRightOfWay().setRightofway("bycicle");
         
-        controller.lamp.turnYellow();
-        junctionMonitor.update("controller.turnYellow().lamp");
-        junction.getTrafficLamp().setAppear();
-        junction.getCar().setDisappear();
+        controller.lamp.turnRed();
+        junctionMonitor.update("controller.turnRed().lamp");
         lamp.controller.updateStatus();
         junctionMonitor.update("lamp.updateStatus().controller");
         junction.getCar().setSpeed(50);
         junction.getDistance().setMeter(100);
+        if (junctionMonitor.update("_") == 0) {
+        	System.out.println("Inconclusive");
+        }
     }
 }
