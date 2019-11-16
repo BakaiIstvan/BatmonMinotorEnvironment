@@ -71,13 +71,13 @@ public class JunctionMonitor extends Monitor {
 			letters[0] = true;
 			signals_used.add("changeto(junction.distance.meter, 100)");
 		}
-		if(signals.contains("lamp.updatestatus().controller")) {
-			letters[1] = true;
-			signals_used.add("lamp.updatestatus().controller");
-		}
 		if(signals.contains("changeto(junction.car.speed, 50.0)")) {
-			letters[2] = true;
+			letters[1] = true;
 			signals_used.add("changeto(junction.car.speed, 50.0)");
+		}
+		if(signals.contains("lamp.updatestatus().controller")) {
+			letters[2] = true;
+			signals_used.add("lamp.updatestatus().controller");
 		}
 		if(signals.contains("appear(junction.trafficlamp)")) {
 			letters[3] = true;
@@ -3371,10 +3371,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -3392,10 +3392,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -3416,34 +3416,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -3479,34 +3479,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -3554,64 +3554,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -3659,64 +3659,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -3779,64 +3779,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -3884,64 +3884,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -3989,34 +3989,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_3;
 		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_2;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_8;
@@ -4052,34 +4052,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_3;
 		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_9;
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_2;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_8;
@@ -4100,10 +4100,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_3;
@@ -4121,10 +4121,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_9;
@@ -5049,10 +5049,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_8;
@@ -5070,10 +5070,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_8;
@@ -5094,34 +5094,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_2;
 		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_8;
 		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_8;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_11;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_11;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_5;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_11;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_8;
@@ -5157,34 +5157,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_11;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_2;
 		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_8;
 		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_8;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_11;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_11;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_5;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_11;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_8;
@@ -5232,64 +5232,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_5;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_5;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_5;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -5337,64 +5337,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_11;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_5;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_5;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_5;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -5457,64 +5457,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_2;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_5;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_5;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_5;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -5562,64 +5562,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_11;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_2;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_5;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_5;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_2;
+			currentState = State.State_5;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -5667,34 +5667,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_2;
 		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_8;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+			currentState = State.State_8;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_8;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_8;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_5;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_8;
@@ -5730,34 +5730,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_11;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_2;
 		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_8;
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+			currentState = State.State_8;
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_8;
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_8;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_5;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_8;
@@ -5778,10 +5778,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_5;
@@ -5799,10 +5799,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_11;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_8;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_8;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_11;
@@ -5823,10 +5823,10 @@ public class JunctionMonitor extends Monitor {
 			return goodStateReached();
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_9;
@@ -5844,11 +5844,11 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
@@ -5875,34 +5875,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_3;
 		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_9;
 		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_12;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_12;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_6;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_12;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_9;
@@ -5939,43 +5939,43 @@ public class JunctionMonitor extends Monitor {
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_7;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_13;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_10;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_10;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
 		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_10;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_13;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_13;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_7;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_13;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
@@ -6034,64 +6034,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_6;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_6;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_6;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_6;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_6;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_6;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_3;
@@ -6144,83 +6144,83 @@ public class JunctionMonitor extends Monitor {
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_7;
+			currentState = State.State_4;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_7;
+			currentState = State.State_4;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_7;
+			currentState = State.State_4;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_4;
+			currentState = State.State_7;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_4;
+			currentState = State.State_7;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_4;
+			currentState = State.State_7;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
@@ -6294,64 +6294,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_6;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_6;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_6;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_6;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_6;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_6;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_3;
@@ -6409,83 +6409,83 @@ public class JunctionMonitor extends Monitor {
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_7;
+			currentState = State.State_4;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_7;
+			currentState = State.State_4;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_7;
+			currentState = State.State_4;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_4;
+			currentState = State.State_7;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_4;
+			currentState = State.State_7;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_4;
+			currentState = State.State_7;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
@@ -6539,34 +6539,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_3;
 		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_6;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_9;
@@ -6612,43 +6612,43 @@ public class JunctionMonitor extends Monitor {
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_7;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
 		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_10;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+			currentState = State.State_10;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_10;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_10;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_7;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
@@ -6671,10 +6671,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_7;
@@ -6697,11 +6697,11 @@ public class JunctionMonitor extends Monitor {
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
@@ -6727,10 +6727,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_8;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_8;
@@ -6748,10 +6748,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_8;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_8;
@@ -6772,34 +6772,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_3;
 		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_9;
 		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_11;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_11;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_5;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_11;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_8;
@@ -6835,34 +6835,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_3;
 		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_9;
 		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_9;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_11;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_11;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_5;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_11;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_8;
@@ -6910,64 +6910,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_5;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_5;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_5;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -7015,64 +7015,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_5;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_5;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_5;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -7135,64 +7135,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_5;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_5;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_5;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -7240,64 +7240,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
+			currentState = State.State_3;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_5;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_5;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_5;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_2;
@@ -7345,34 +7345,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_3;
 		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_5;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_8;
@@ -7408,34 +7408,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_5;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_3;
 		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_9;
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_5;
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_8;
@@ -7456,10 +7456,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_6;
@@ -7477,10 +7477,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_11;
+			currentState = State.State_9;
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_11;
 		}
 		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_12;
@@ -7501,10 +7501,10 @@ public class JunctionMonitor extends Monitor {
 			return goodStateReached();
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_9;
@@ -7522,11 +7522,11 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_9;
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
@@ -7553,34 +7553,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_3;
 		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_9;
 		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_12;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_12;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_6;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_12;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_9;
@@ -7617,43 +7617,43 @@ public class JunctionMonitor extends Monitor {
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_7;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_13;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_10;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_10;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
 		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_10;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_13;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_13;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+			currentState = State.State_7;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_13;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
@@ -7712,64 +7712,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_6;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_6;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_6;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_6;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_6;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_6;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_3;
@@ -7822,83 +7822,83 @@ public class JunctionMonitor extends Monitor {
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_7;
+			currentState = State.State_4;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_7;
+			currentState = State.State_4;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_7;
+			currentState = State.State_4;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_4;
+			currentState = State.State_7;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_4;
+			currentState = State.State_7;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_4;
+			currentState = State.State_7;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
@@ -7972,64 +7972,64 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_6;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_6;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_6;
+			currentState = State.State_3;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_6;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_6;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_3;
+			currentState = State.State_6;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_3;
@@ -8087,83 +8087,83 @@ public class JunctionMonitor extends Monitor {
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_7;
+			currentState = State.State_4;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_7;
+			currentState = State.State_4;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_7;
+			currentState = State.State_4;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
-			currentState = State.State_4;
+			currentState = State.State_7;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_4;
+			currentState = State.State_7;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_4;
+			currentState = State.State_7;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
@@ -8217,34 +8217,34 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_3;
 		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_9;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_6;
+		}
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_9;
@@ -8290,43 +8290,43 @@ public class JunctionMonitor extends Monitor {
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
-			currentState = State.State_7;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
-			currentState = State.State_13;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
-			return goodStateReached();
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
 		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
 			currentState = State.State_10;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+			currentState = State.State_10;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_10;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+			currentState = State.State_10;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+			currentState = State.State_7;
+			return goodStateReached();
+		}
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
@@ -8349,10 +8349,10 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_12;
 		}
 		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_12;
+			currentState = State.State_9;
 		}
 		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_9;
+			currentState = State.State_12;
 		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_7;
@@ -8375,11 +8375,11 @@ public class JunctionMonitor extends Monitor {
 			return goodStateReached();
 		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_13;
+			currentState = State.State_10;
 			return goodStateReached();
 		}
 		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
-			currentState = State.State_10;
+			currentState = State.State_13;
 			return goodStateReached();
 		}
 		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
