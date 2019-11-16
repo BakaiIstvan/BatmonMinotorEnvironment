@@ -102,2391 +102,1631 @@ public class JunctionMonitor extends Monitor {
 		System.out.println(getMessagePrefix() + "Signals sent: " + String.join("; ", signals));
 		System.out.println(getMessagePrefix() + "Signals used: " + String.join("; ", signals_used));
 
+		int result = 0;
 		switch(currentState) {
 			case State_0:
-				return State_0(letters);
+				result = State_0(letters);
+				break;
 			case State_1:
-				return State_1(letters);
+				result = State_1(letters);
+				break;
 			case State_2:
-				return State_2(letters);
+				result = State_2(letters);
+				break;
 			case State_3:
-				return State_3(letters);
+				result = State_3(letters);
+				break;
 			case State_4:
-				return State_4(letters);
+				result = State_4(letters);
+				break;
 			case State_5:
-				return State_5(letters);
+				result = State_5(letters);
+				break;
 			case State_6:
-				return State_6(letters);
+				result = State_6(letters);
+				break;
 			case State_7:
-				return State_7(letters);
+				result = State_7(letters);
+				break;
 			case State_8:
-				return State_8(letters);
+				result = State_8(letters);
+				break;
 			case State_9:
-				return State_9(letters);
+				result = State_9(letters);
+				break;
 			case State_10:
-				return State_10(letters);
+				result = State_10(letters);
+				break;
 			case State_11:
-				return State_11(letters);
+				result = State_11(letters);
+				break;
 			case State_12:
-				return State_12(letters);
+				result = State_12(letters);
+				break;
 			case State_13:
-				return State_13(letters);
+				result = State_13(letters);
+				break;
 			case State_14:
-				return State_14(letters);
+				result = State_14(letters);
+				break;
 		}
 		System.out.println(getMessagePrefix() + "State after update: " + currentState + "\n");
 
-		return 0;
+		return result;
 	}
 
 	private int State_0(boolean[] letters) {
-		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
 
 		return 0;
 	}
 
 	private int State_1(boolean[] letters) {
-		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_1;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_2;
-		}
 
 		return 0;
 	}
 
 	private int State_2(boolean[] letters) {
-		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
 
 		return 0;
 	}
 
 	private int State_3(boolean[] letters) {
-		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
@@ -2515,69 +1755,48 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
@@ -2662,111 +1881,76 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
@@ -2907,111 +2091,76 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
@@ -3152,69 +2301,48 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
@@ -3299,27 +2427,20 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
@@ -3348,9 +2469,8 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_10;
 			return goodStateReached();
@@ -3364,807 +2484,543 @@ public class JunctionMonitor extends Monitor {
 	}
 
 	private int State_5(boolean[] letters) {
-		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 
 		return 0;
 	}
 
 	private int State_6(boolean[] letters) {
-		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
@@ -4193,69 +3049,48 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
@@ -4340,111 +3175,76 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
@@ -4585,111 +3385,76 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
@@ -4830,69 +3595,48 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
@@ -4977,27 +3721,20 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_4;
 			return goodStateReached();
@@ -5026,9 +3763,8 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_10;
 			return goodStateReached();
@@ -5042,807 +3778,543 @@ public class JunctionMonitor extends Monitor {
 	}
 
 	private int State_8(boolean[] letters) {
-		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
 
 		return 0;
 	}
 
 	private int State_9(boolean[] letters) {
-		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_10;
 			return goodStateReached();
@@ -5871,69 +4343,48 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_13;
 			return goodStateReached();
@@ -6018,111 +4469,76 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_13;
 			return goodStateReached();
@@ -6263,111 +4679,76 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_13;
 			return goodStateReached();
@@ -6508,69 +4889,48 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_7;
 			return goodStateReached();
@@ -6655,27 +5015,20 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_7;
 			return goodStateReached();
@@ -6704,9 +5057,8 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_13;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_13;
 			return goodStateReached();
@@ -6720,807 +5072,543 @@ public class JunctionMonitor extends Monitor {
 	}
 
 	private int State_11(boolean[] letters) {
-		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_2;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_5;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_8;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_11;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
 
 		return 0;
 	}
 
 	private int State_12(boolean[] letters) {
-		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_10;
 			return goodStateReached();
@@ -7549,69 +5637,48 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_13;
 			return goodStateReached();
@@ -7696,111 +5763,76 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_13;
 			return goodStateReached();
@@ -7941,111 +5973,76 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_13;
 			return goodStateReached();
@@ -8186,69 +6183,48 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_3;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
 			currentState = State.State_7;
 			return goodStateReached();
@@ -8333,27 +6309,20 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_10;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_6;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_9;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
 			currentState = State.State_7;
 			return goodStateReached();
@@ -8382,9 +6351,8 @@ public class JunctionMonitor extends Monitor {
 			currentState = State.State_13;
 			return goodStateReached();
 		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_12;
-		}
 		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
 			currentState = State.State_13;
 			return goodStateReached();
@@ -8398,774 +6366,518 @@ public class JunctionMonitor extends Monitor {
 	}
 
 	private int State_14(boolean[] letters) {
-		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (!(letters[7])))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7]))) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (!(letters[7])))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (!(letters[6])) && (letters[7]))
 			currentState = State.State_14;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (!(letters[5])) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (!(letters[4])) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (!(letters[3])) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (!(letters[2])) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (!(letters[1])) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((!(letters[0])) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
-		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7])) {
+		else if((letters[0]) && (letters[1]) && (letters[2]) && (letters[3]) && (letters[4]) && (letters[5]) && (letters[6]) && (letters[7]))
 			currentState = State.State_0;
-		}
 
 		return 0;
 	}
