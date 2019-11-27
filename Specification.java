@@ -23,80 +23,36 @@ public class Specification{
 		Automaton expression;
 		int counter = 0;
 		
-		
-		b = new Automaton("auto3");
-		actualState = new State("q" + counter, StateType.ACCEPT);
+		b = new Automaton("auto12");
+		actualState = new State("q" + counter, StateType.NORMAL);
 		counter++;
 		b.addState(actualState);
 		b.setInitial(actualState);
-		
-		
-		b.addTransition(new Transition("!(" + "match(" + "Junction" + ", " + "Redlight" + "))", actualState, actualState));
+												
 		newState = new State("q" + counter, StateType.FINAL);
 		counter++;
 		b.addTransition(new Transition("match(" + "Junction" + ", " + "Redlight" + ")", actualState, newState));
 		b.addState(newState);
 		b.setFinale(newState);
 		a.collapse(b);
-		b = new Automaton("auto7");
-		actualState = new State("q" + counter, StateType.NORMAL);
-		counter++;
-		b.addState(actualState);
-		b.setInitial(actualState);
-											
-		b.addTransition(new Transition("1", actualState, actualState));
-		newState = new State("q" + counter, StateType.FINAL);
-		counter++;
-		b.addTransition(new Transition("controller" + "." + "turnYellow()" + "." + "lamp" , actualState, newState));
-		b.addState(newState);
-		b.setFinale(newState);
-		a.collapse(b);
 		
 		
-		b = new Automaton("match1");
-		actualState = new State("q" + counter, StateType.NORMAL);
-		counter++;
-		b.addState(actualState);
-		b.setInitial(actualState);
-											
-		b.addTransition(new Transition("1", actualState, actualState));
-		newState = new State("q" + counter, StateType.FINAL);
-		counter++;
-		b.addTransition(new Transition("appear(" + "Junction" + "." + "TrafficLamp" + ")" , actualState, newState));
-		b.addState(newState);
-		b.setFinale(newState);
-		a.collapse(b);																								
-		
-		b = new Automaton("match1");
-		actualState = new State("q" + counter, StateType.NORMAL);
-		counter++;
-		b.addState(actualState);
-		b.setInitial(actualState);
-											
-		b.addTransition(new Transition("1", actualState, actualState));
-		newState = new State("q" + counter, StateType.FINAL);
-		counter++;
-		b.addTransition(new Transition("disappear(" + "Junction" + "." + "Car" + ")" , actualState, newState));
-		b.addState(newState);
-		b.setFinale(newState);
-		a.collapse(b);																							
-		str = "" 
-		+ "!(" + "controller" + "." + "turnOff()" + "." + "lamp)" + " & "
-								;
-		str= str.substring(0, str.length() - 3);
-		b = new Automaton("auto7");
+		b = new Automaton("auto12");
 		actualState = new State("q" + counter, StateType.NORMAL);
 		counter++;
 		b.addState(actualState);
 		b.setInitial(actualState);
 												
-		b.addTransition(new Transition(str, actualState, actualState));
 		newState = new State("q" + counter, StateType.FINAL);
 		counter++;
-		b.addTransition(new Transition("lamp" + "." + "updateStatus()" + "." + "controller", actualState, newState));
+		b.addTransition(new Transition("controller" + "." + "turnRed()" + "." + "lamp", actualState, newState));
 		b.addState(newState);
 		b.setFinale(newState);
 		a.collapse(b);
+		str = "" 
+		+ "!(" + "controller" + "." + "turnOff()" + "." + "lamp)" + " & "
+								;
+		str= str.substring(0, str.length() - 3);
 		
 		b = new Automaton("auto12");
 		actualState = new State("q" + counter, StateType.NORMAL);
@@ -106,25 +62,24 @@ public class Specification{
 		
 		newState = new State("q" + counter, StateType.FINAL);
 		counter++;
-		b.addTransition(new Transition("changeTo(" + "Junction" + "." + "Car" + "." + "speed, 50.0" + ")", actualState, newState));
+		b.addTransition(new Transition("changeTo(" + "Junction" + "." + "Car" + "." + "speed, 0" + ")", actualState, newState));
 		b.addState(newState);
 		b.setFinale(newState);
 		a.collapse(b);																																				
 		
-		
-		b = new Automaton("match1");
+		b = new Automaton("auto12");
 		actualState = new State("q" + counter, StateType.NORMAL);
 		counter++;
 		b.addState(actualState);
 		b.setInitial(actualState);
 		
-		b.addTransition(new Transition("1", actualState, actualState));
 		newState = new State("q" + counter, StateType.FINAL);
 		counter++;
-		b.addTransition(new Transition("changeTo(" + "Junction" + "." + "Distance" + "." + "meter, 100" + ")" , actualState, newState));
+		b.addTransition(new Transition("changeTo(" + "Junction" + "." + "Distance" + "." + "meter, 2" + ")", actualState, newState));
 		b.addState(newState);
 		b.setFinale(newState);
-		a.collapse(b);																																	
+		a.collapse(b);																																				
+		
 		a.rename();
 		automatas.add(a);
 	}
