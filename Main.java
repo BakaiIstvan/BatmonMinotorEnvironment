@@ -25,16 +25,12 @@ public class Main {
         junction.getBycicle().setLocation("in_front_of_the_car");
 
         junction.getDistance().setMeter(13);
-
-        junction.getRightOfWay().setRightofway("bycicle");
         
         controller.lamp.turnYellow();
         junctionMonitor.update("controller.turnYellow().lamp");
-        junction.getTrafficLamp().setAppear();
-        junction.getCar().setDisappear();
         lamp.controller.updateStatus();
         junctionMonitor.update("lamp.updateStatus().controller");
-        junction.getCar().setSpeed(50);
-        junction.getDistance().setMeter(100);
+        junction.getCar().setSpeed(20);
+        junction.getDistance().setMeter(6);
     }
 }
