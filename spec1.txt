@@ -1,11 +1,11 @@
 never{ /*JunctionMonitor*/
 T0_init:
  do
- :: (match(Junction, Redlight)) -> goto T0_q1
+ :: (controller.turnRed().lamp) -> goto T0_q1
  od;
 T0_q1:
  do
- :: (controller.turnRed().lamp) -> goto T0_q2
+ :: (lamp.updateStatus().controller) -> goto T0_q2
  od;
 T0_q2:
  do
