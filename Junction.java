@@ -1,7 +1,7 @@
 public class Junction {
 	private TrafficLamp trafficLamp;
 	private Car car;
-	private Pieton pieton;
+	private Pedestrian pedestrian;
 	private Bycicle bycicle;
 	private Distance distance;
 	private RightOfWay rightOfWay;
@@ -9,7 +9,7 @@ public class Junction {
 	public Junction() {
 		trafficLamp = new TrafficLamp();
 		car = new Car();
-		pieton = new Pieton();
+		pedestrian = new Pedestrian();
 		bycicle = new Bycicle();
 		distance = new Distance(car, trafficLamp);
 		rightOfWay = new RightOfWay(car, bycicle);
@@ -18,7 +18,7 @@ public class Junction {
 	public Junction(EventCreator eventCreator) {
 		trafficLamp = new TrafficLamp(eventCreator);
 		car = new Car(eventCreator);
-		pieton = new Pieton(eventCreator);
+		pedestrian = new Pedestrian(eventCreator);
 		bycicle = new Bycicle(eventCreator);
 		distance = new Distance(car, trafficLamp, eventCreator);
 		rightOfWay = new RightOfWay(car, bycicle, eventCreator);
@@ -30,8 +30,8 @@ public class Junction {
 	public Car getCar() {
 		return car;
 	}
-	public Pieton getPieton() {
-		return pieton;
+	public Pedestrian getPedestrian() {
+		return pedestrian;
 	}
 	public Bycicle getBycicle() {
 		return bycicle;

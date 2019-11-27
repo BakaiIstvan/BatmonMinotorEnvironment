@@ -52,34 +52,6 @@ public class Specification{
 		b.setFinale(newState);
 		a.collapse(b);
 		
-		
-		b = new Automaton("match1");
-		actualState = new State("q" + counter, StateType.NORMAL);
-		counter++;
-		b.addState(actualState);
-		b.setInitial(actualState);
-											
-		b.addTransition(new Transition("1", actualState, actualState));
-		newState = new State("q" + counter, StateType.FINAL);
-		counter++;
-		b.addTransition(new Transition("appear(" + "Junction" + "." + "TrafficLamp" + ")" , actualState, newState));
-		b.addState(newState);
-		b.setFinale(newState);
-		a.collapse(b);																								
-		
-		b = new Automaton("match1");
-		actualState = new State("q" + counter, StateType.NORMAL);
-		counter++;
-		b.addState(actualState);
-		b.setInitial(actualState);
-											
-		b.addTransition(new Transition("1", actualState, actualState));
-		newState = new State("q" + counter, StateType.FINAL);
-		counter++;
-		b.addTransition(new Transition("disappear(" + "Junction" + "." + "Car" + ")" , actualState, newState));
-		b.addState(newState);
-		b.setFinale(newState);
-		a.collapse(b);																							
 		str = "" 
 		+ "!(" + "controller" + "." + "turnOff()" + "." + "lamp)" + " & "
 								;
@@ -106,7 +78,7 @@ public class Specification{
 		
 		newState = new State("q" + counter, StateType.FINAL);
 		counter++;
-		b.addTransition(new Transition("changeTo(" + "Junction" + "." + "Car" + "." + "speed, 50.0" + ")", actualState, newState));
+		b.addTransition(new Transition("changeTo(" + "Junction" + "." + "Car" + "." + "speed, 20.0" + ")", actualState, newState));
 		b.addState(newState);
 		b.setFinale(newState);
 		a.collapse(b);																																				
@@ -121,7 +93,7 @@ public class Specification{
 		b.addTransition(new Transition("1", actualState, actualState));
 		newState = new State("q" + counter, StateType.FINAL);
 		counter++;
-		b.addTransition(new Transition("changeTo(" + "Junction" + "." + "Distance" + "." + "meter, 100" + ")" , actualState, newState));
+		b.addTransition(new Transition("changeTo(" + "Junction" + "." + "Distance" + "." + "meter, 6" + ")" , actualState, newState));
 		b.addState(newState);
 		b.setFinale(newState);
 		a.collapse(b);																																	
