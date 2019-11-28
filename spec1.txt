@@ -9,7 +9,7 @@ T0_q1:
  od;
 T0_q2:
  do
- :: (changeTo(Junction.Car.speed, 0)) -> goto T0_q3
+ :: (changeTo(Junction.Car.speed, 0.0)) -> goto T0_q3
  od;
 T0_q3:
  do

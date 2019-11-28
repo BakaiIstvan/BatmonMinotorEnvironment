@@ -1,15 +1,15 @@
 public class EventCreator {
 	private Junction junction;
-	private Redlight redlight;
+	private Greenlight greenlight;
 	private Monitor monitorInterface;
 	
 	public EventCreator(
 		Junction junction,
-		Redlight redlight,
+		Greenlight greenlight,
 		Monitor monitorInterface
 	) {
 		this.junction = junction;
-		this.redlight = redlight;
+		this.greenlight = greenlight;
 		this.monitorInterface = monitorInterface;
 	}
 	
@@ -19,7 +19,7 @@ public class EventCreator {
 	
 	public void appear(String name) {
 		monitorInterface.update("appear(Junction." + name + ")");
-		if (redlight.match(
+		if (greenlight.match(
 			junction.getTrafficLamp()
 			,
 			junction.getCar()
@@ -30,13 +30,13 @@ public class EventCreator {
 			,
 			junction.getRightOfWay()
 		)) {
-			monitorInterface.update("match(Junction, Redlight)");
+			monitorInterface.update("match(Junction, Greenlight)");
 		}
 	}
 	
 	public void disappear(String name) {
 		monitorInterface.update("disappear(Junction." + name + ")"); 
-		if (redlight.match(
+		if (greenlight.match(
 			junction.getTrafficLamp()
 			,
 			junction.getCar()
@@ -47,13 +47,13 @@ public class EventCreator {
 			,
 			junction.getRightOfWay()
 		)) {
-			monitorInterface.update("match(Junction, Redlight)");
+			monitorInterface.update("match(Junction, Greenlight)");
 		}
 	}
 	
 	public void changeTo(String event) {
 		monitorInterface.update("changeTo(Junction." + event + ")"); 
-		if (redlight.match(
+		if (greenlight.match(
 			junction.getTrafficLamp()
 			,
 			junction.getCar()
@@ -64,7 +64,7 @@ public class EventCreator {
 			,
 			junction.getRightOfWay()
 		)) {
-			monitorInterface.update("match(Junction, Redlight)");
+			monitorInterface.update("match(Junction, Greenlight)");
 		}
 	}
 }
