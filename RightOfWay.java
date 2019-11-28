@@ -1,20 +1,20 @@
 public class RightOfWay {
 	private Car sender;
-	private Bycicle receiver;
+	private Pedestrian receiver;
 	private EventCreator eventCreator;
 	private String rightofway;
 	
-	public RightOfWay(Car sender, Bycicle receiver) {
+	public RightOfWay(Car sender, Pedestrian receiver) {
 		this.sender = sender;
 		this.receiver = receiver;
-		rightofway = "bycicle";
+		rightofway = "pedestrian";
 	}
 	
-	public RightOfWay(Car sender, Bycicle receiver, EventCreator eventCreator) {
+	public RightOfWay(Car sender, Pedestrian receiver, EventCreator eventCreator) {
 		this.sender = sender;
 		this.receiver = receiver;
 		this.eventCreator = eventCreator;
-		rightofway = "bycicle";
+		rightofway = "pedestrian";
 	}
 		
 	public String getRightofway() { return rightofway; }
@@ -26,5 +26,5 @@ public class RightOfWay {
 	
 	public Car getSender() { return sender; }
 	
-	public Bycicle getReceiver() { return receiver; }
+	public Pedestrian getReceiver() { return receiver; }
 }

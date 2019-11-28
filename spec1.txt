@@ -1,8 +1,8 @@
 never{ /*JunctionMonitor*/
 T0_init:
  do
- :: (!(match(Junction, Redlight))) -> goto T0_init
- :: (match(Junction, Redlight)) -> goto T0_q1
+ :: (!(match(Junction, Greenlight))) -> goto T0_init
+ :: (match(Junction, Greenlight)) -> goto T0_q1
  od;
 T0_q1:
  do
@@ -24,6 +24,35 @@ T0_q4:
  :: (changeTo(Junction.Distance.meter, 6)) -> goto T0_q5
  od;
 T0_q5:
+ do
+ :: (true) -> goto T0_q5
+ :: (controller.turnRed().lamp) -> goto T0_q6
+ od;
+T0_q6:
+ do
+ :: (lamp.updateStatus().controller) -> goto T0_q7
+ od;
+T0_q7:
+ do
+ :: (true) -> goto T0_q7
+ :: (disappear(Junction.Pedestrian)) -> goto T0_q8
+ od;
+T0_q8:
+ do
+ :: (true) -> goto T0_q8
+ :: (changeTo(Junction.Car.speed, 0.0)) -> goto T0_q9
+ od;
+T0_q9:
+ do
+ :: (true) -> goto T0_q9
+ :: (appear(Junction.Bycicle)) -> goto T0_q10
+ od;
+T0_q10:
+ do
+ :: (true) -> goto T0_q10
+ :: (changeTo(Junction.Bycicle.location, in_front_of_the_car)) -> goto T0_q11
+ od;
+T0_q11:
  do
  od;
 }
