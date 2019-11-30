@@ -44,15 +44,5 @@ T0_q8:
  od;
 T0_q9:
  do
- :: (true) -> goto T0_q9
- :: (appear(Junction.Bycicle)) -> goto T0_q10
- od;
-T0_q10:
- do
- :: (true) -> goto T0_q10
- :: (changeTo(Junction.Bycicle.location, in_front_of_the_car)) -> goto T0_q11
- od;
-T0_q11:
- do
  od;
 }

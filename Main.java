@@ -38,7 +38,5 @@ public class Main {
         junctionMonitor.update("lamp.updateStatus().controller");
         junction.getPedestrian().setDisappear();
         junction.getCar().setSpeed(0);
-        junction.getBycicle().setAppear();
-        junction.getBycicle().setLocation("in_front_of_the_car");
     }
 }
