@@ -15,6 +15,8 @@ public class Main {
         controller = new LampController(lamp, junctionMonitor);
         lamp.setController(controller);
         
+        junction.getCar().setAppear();
+        junction.getTrafficLamp().setAppear();
         controller.lamp.turnRed();
         junctionMonitor.update("controller.turnRed().lamp");
         lamp.controller.updateStatus();

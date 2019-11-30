@@ -1,21 +1,29 @@
 never{ /*JunctionMonitor*/
 T0_init:
  do
- :: (controller.turnRed().lamp) -> goto T0_q1
+ :: (appear(Junction.Car)) -> goto T0_q1
  od;
 T0_q1:
  do
- :: (lamp.updateStatus().controller) -> goto T0_q2
+ :: (appear(Junction.TrafficLamp)) -> goto T0_q2
  od;
 T0_q2:
  do
- :: (changeTo(Junction.Car.speed, 0.0)) -> goto T0_q3
+ :: (controller.turnRed().lamp) -> goto T0_q3
  od;
 T0_q3:
  do
- :: (changeTo(Junction.Distance.meter, 2)) -> goto T0_q4
+ :: (lamp.updateStatus().controller) -> goto T0_q4
  od;
 T0_q4:
+ do
+ :: (changeTo(Junction.Car.speed, 0.0)) -> goto T0_q5
+ od;
+T0_q5:
+ do
+ :: (changeTo(Junction.Distance.meter, 2)) -> goto T0_q6
+ od;
+T0_q6:
  do
  od;
 }
