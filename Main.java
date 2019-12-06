@@ -23,5 +23,6 @@ public class Main {
         junctionMonitor.update("lamp.updateStatus().controller");
         junction.getCar().setSpeed(50);
         junction.getDistance().setMeter(100);
+        
     }
 }
