@@ -1,0 +1,13 @@
+never{ /*armsMonitor*/
+T0_init:
+ if
+ :: (controller.enabled().segment) -> goto T0_q1
+ fi;
+T0_q1:
+ if
+ :: (controller.disabled().segment) -> goto T0_q2
+ fi;
+T0_q2:
+ if
+ fi;
+}
