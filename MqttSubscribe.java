@@ -4,7 +4,7 @@ import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 public class MqttSubscribe implements MqttCallback {
-    private Modes3_MonitorManager monitormanager = new Modes3_MonitorManager();
+    private armsMonitor monitormanager = new armsMonitor();
 
     public static void main(String[] args) {
         String topic = "/modes3/segment/status/7";
@@ -46,18 +46,18 @@ public class MqttSubscribe implements MqttCallback {
     }
 
     public void messageArrived(String topic, MqttMessage mqttMessage) {
-        try {
-            System.out.println("(topic: " + topic + ")");
+    	try {
+        System.out.println("(topic: " + topic + ")");
 
-            SegmentState segmentState = SegmentState.parseFrom(mqttMessage.getPayload());
-            boolean isEnabled = segmentState.getUnknownFields().toString().contains("2: 1");
+        SegmentState segmentState = SegmentState.parseFrom(mqttMessage.getPayload());
+        boolean isEnabled = segmentState.getUnknownFields().toString().contains("2: 1");
 
-            if(isEnabled)
-                monitormanager.update("segment.enabled().controller");
-            else
-                monitormanager.update("disabled");
-        } catch (InvalidProtocolBufferException e) {
-            e.printStackTrace();
-        }
+        if(isEnabled)
+            monitormanager.update("controller.enabled().segment");
+        else
+            monitormanager.update("controller.disabled().segment");
+    	} catch (InvalidProtocolBufferException e) {
+    		e.printStackTrace();
+    	}
     }
 }
